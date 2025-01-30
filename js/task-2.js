@@ -1,10 +1,9 @@
 function calcAverageCalories(days) {
     let caloriesArray = [];
     let sumCalories = 0;
-    let cal;
-    let i;
-    for (cal of days) {
-        caloriesArray.push(cal.calories);
+    let i = 0;
+    for (i of days) {
+        caloriesArray.push(i.calories);
     };
     for (i = 0; i < caloriesArray.length; i += 1) {
         sumCalories += caloriesArray[i];
